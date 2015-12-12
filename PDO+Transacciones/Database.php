@@ -1,11 +1,11 @@
 <?php
 /**
  * Lacuna PDO Data Class
- * @autor Miguel Barocchi
+ * @author Miguel Barocchi
  * @param bool $auto_connect can be ommited: default value = true
  *
  *
- * Usage:
+ * @uses
  * $db = new Database();
  * $db->call('sp_test_update',array((string)'6'));
  * $db->query('insert into table(a,b) values(8,9)');
