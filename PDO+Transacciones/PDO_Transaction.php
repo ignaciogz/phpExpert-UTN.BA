@@ -1,7 +1,7 @@
 <?php
-/*!
+/**
   * PDO Transaction Class
-  * @autor Ignacio Gutierrez
+  * @author Ignacio Gutierrez
   *
   * @param string $sql_query "Representa el template de la consulta a realizar" 
   * @param string $selectorBindeador "Representa que tipo de query se va a ejecutar"
