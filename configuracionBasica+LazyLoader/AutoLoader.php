@@ -1,7 +1,7 @@
 <?php
-/*!
+/**
   * AutoLoader Class - Lazy
-  * @autor Ignacio Gutierrez
+  * @author Ignacio Gutierrez
   *
   * @param array $paths "Representa las rutas donde buscar las clases del autocargador lazy"
 */
