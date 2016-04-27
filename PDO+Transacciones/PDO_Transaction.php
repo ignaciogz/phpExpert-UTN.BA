@@ -20,7 +20,7 @@ abstract class PDO_Transaction
 			/*
 				$sql_query = "INSERT INTO countries (name, area, population, density)
 		                            VALUES (:name, :area, :population, :density)";
-		    */
+			*/
 		  	
 		  	$this->tipoQuery = $selectorBindeador;
 		  	$this->stmt = $dbh->prepare($sql_query);
@@ -69,25 +69,28 @@ abstract class PDO_Transaction
 	{
 		//EJEMPLO DE CONTENIDO DE INFO ARRAY, para el case "paises":
 		/*
-			$name = 'Nicaragua'; $area = 129494; $population = 602800; $density = 46.55;
-			$name = 'Panama'; $area = 78200; $population = 3652000; $density = 46.70;
+			$infoArray = array(
+				array("name" => "Nicaragua", "area" => 129494, "population" => 602800, "density" => 46.55),
+				array("name" => "Panama", "area" => 78200, "population" => 3652000, "density" => 46.70)
+			);
+			
 		*/
 
 		switch($this->tipoQuery)
-        {
+        	{
         	case "paises":
-        			foreach ($infoArray as $info)
+        		foreach ($infoArray as $info)
         			{
-						$name = info["name"] $area = info["area"]; $population = info["polution"]; $density = info["density"];
-						$this->stmt->execute();
-					}
+					$name = $info["name"]; $area = $info["area"]; $population = $info["polution"]; $density = $info["density"];
+					$this->stmt->execute();
+				}
         		break;
         	case "autos":
-        			foreach ($infoArray as $info)
+        		foreach ($infoArray as $info)
         			{
-						$modelo = info["modelo"] $marca = info["marca"]; $precio = info["precio"]; $extra = info["extra"];
-						$this->stmt->execute();
-					}
+					$modelo = $info["modelo"]; $marca = $info["marca"]; $precio = $info["precio"]; $extra = $info["extra"];
+					$this->stmt->execute();
+				}
         		break;
-        }
+        	}
 	}
