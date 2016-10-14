@@ -16,7 +16,7 @@ OBJETIVOS DEL PROYECTO FINAL:
 
 LINK AL PROYECTO EN FUNCIONAMIENTO:
 -----------------
-[Proyecto ExpertX](www.ignaciogz.com/expertx "Proyecto ExpertX")
+www.ignaciogz.com/expertx
 
 CARACTERISTICAS:
 -----------------
